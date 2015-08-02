@@ -12,7 +12,7 @@ $(document).ready(function() {
 
 	$("a").on('click',function(event){
         var url = $(this).context.href;
-        if(url.indexOf("/#")==-1 && url.indexOf("#")!=url.length-1 && !xPressed && url.toLowerCase()!="javascript:void(0)" && url.toLowerCase()!="javascript:;"){
+        if(url.indexOf("/#")==-1 && url.indexOf("#")!=url.length-1 && !xPressed && url.toLowerCase()!="javascript:void(0)" && url.toLowerCase()!="javascript:void(0);" && url.toLowerCase()!="javascript:;"){
         	event.preventDefault();
         	var win = window.open(url, '_blank');
         	win.focus();
